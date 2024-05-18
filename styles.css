@@ -1,0 +1,191 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #dedede;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top:2rem;
+    margin-bottom: 2rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+
+header {
+    
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap:30px;
+    margin-top:0.75rem;
+
+}
+
+
+nav ul a {
+    text-decoration: none;
+    position: relative;
+    padding: 0.2em 0;
+}
+
+
+nav ul a:link {
+    color: #0e2f1a;
+    
+}
+nav ul a:visited {
+    color: #21974a;
+}
+nav ul a:hover {
+    color: #0c5f64;
+}
+nav ul a:active {
+    color:red;
+}
+
+nav li a {
+  overflow: hidden;
+}
+
+nav li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: #a42b68;
+  opacity: 0;
+  transition: opacity 500ms, transform 500ms;
+}
+
+nav li a:hover::after,
+nav li a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+}
+
+nav li a:hover::after,
+nav li a:focus::after{
+  transform: translate3d(0, 0, 0);
+}
+
+
+@media only screen and (max-width: 600px) {
+    section {
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+section {
+    display: flex;
+    gap:0.5rem;
+}
+
+article {
+    flex: 1;
+    margin-bottom:3rem;
+}
+
+footer {
+    margin-top:3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:20px;
+}
+
+#banner{
+    margin-top: 1rem;
+    background-image: url("banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1.5rem;
+
+}
+
+#banner  p {
+    margin-left: 1rem;
+    width: 55%
+}
+.title{
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  font-style: normal;
+  text-align: center;
+  color: #3c8d11;
+}
+
+.services_heading {
+    margin-top: 1rem;
+    font-family: "Kalam", cursive;
+}
+.services{
+    margin-top: 0.5rem;
+}
+.services h3 {
+    font-family: "Kalam", cursive;
+    font-size: 1.2rem;
+}
+.services ul {
+    margin-top: 1rem;
+}
+.services p {
+    margin-top: 1rem;
+}
+
+.services article {
+    border-radius: 0.45rem;
+    background-color: #daf4d7;
+    padding: 1rem;
+}
+
+.services article ul {
+    list-style: none;
+}
+.service_image {
+    margin-top:0.5rem;
+    width: 100%;
+    height: 16rem;
+}
+
+.services a{
+    color: #0e2f1a;
+    cursor: pointer;
+}
+
+.services a:hover {
+    color: #1b9144;
+    
+}   
+   
+
+.founder {
+    display: flex;
+    justify-content: center;
+}
+
+.founder img {
+    display: block;
+    border-radius: 50%;
+    height: 320px;
+    width: 60%;
+    
+}
+
